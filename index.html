@@ -1,29 +1,34 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Living Lab</title>
 
-    <!-- Google font cdn -->
+    <!-- Google font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
+
 
     <!-- font awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
         integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <!-- tailwind css cdn -->
+
+    <!-- tailwind css & daisyUI cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- tailwind config -->
     <script>
         tailwind.config = {
             theme: {
                 extend: {
                     colors: {
-                        clifford: '#da373d',
+                        header: '#EFEBE3',
                     }
                 }
             }
@@ -31,26 +36,55 @@
     </script>
 
     <style>
-        .sora-serif {
+        .sora-font {
             font-family: "Sora", serif;
         }
     </style>
+
 </head>
 
-<body class="sora-serif">
-    <!-- header section start -->
-    <header>
+<body class="sora-font overflow-hidden">
 
+    <header class="bg-[#EFEBE3] container max-w-full lg:hidden lg:absolute">
+        <!-- nav section start -->
+        <nav class="p-6 lg:hidden md:hidden">
+            <div class="flex items-center justify-between">
+                <img src="./c2/assets/favicon.ico" alt="">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+            <div class="rounded-2xl border bg-yellow-500 mx-auto mt-2 lg:hidden md:hidden"></div>
+        </nav>
+        <!-- nav section end -->
     </header>
-    <!-- header section end -->
 
-    <!-- main start -->
+    <!-- header & banner -->
+
+    <div class="flex items-center justify-between bg-[#EFEBE3] container max-w-full p-6">
+        <img src="./c2/assets/logo-header.png" alt="">
+        <ul class="flex items-center justify-between gap-8">
+            <li class="text-base text-[#111111] hover:text-green-600"><a href="#product">Product</a></li>
+            <li class="text-base text-[#111111] hover:text-green-600"><a href="#services">Services</a></li>
+            <li class="text-base text-[#111111] hover:text-green-600"><a href="#contactus">Contact us</a></li>
+        </ul>
+
+        <div class="flex items-center justify-center gap-4">
+            <!-- nav icon -->
+            <div class="lg:gap-4 flex items-center justify-between">
+                <i class="fa-solid fa-magnifying-glass text-base h-6 w-6"></i>
+                <i class="fa-solid fa-cart-flatbed text-base  h-6 w-7"></i>
+            </div>
+            <!-- nav button -->
+            <div class="gap-3 flex items-center justify-between">
+                <button class="px-7 py-2 border rounded-lg border-[#179800] hover:bg-slate-200">Login</button>
+                <button
+                    class="px-7 py-2 border rounded-lg bg-[#179800] text-xl text-[#FFFFFF]  hover:bg-green-700 cursor-pointer">Register</button>
+            </div>
+        </div>
+    </div>
+
     <main></main>
-    <!-- main end -->
 
-    <!-- footer start -->
     <footer></footer>
-    <!-- footer end -->
 
 </body>
 
