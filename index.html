@@ -43,11 +43,12 @@
 
 </head>
 
-<body class="sora-font overflow-hidden">
+<body class="sora-font">
 
-    <header class="bg-[#EFEBE3] container max-w-full lg:hidden lg:absolute">
+    <!-- header section start -->
+    <header class="bg-[#EFEBE3] max-w-full container mx-auto">
         <!-- nav section start -->
-        <nav class="p-6 lg:hidden md:hidden">
+        <nav class="p-6 lg:hidden">
             <div class="flex items-center justify-between">
                 <img src="./c2/assets/favicon.ico" alt="">
                 <i class="fa-solid fa-bars"></i>
@@ -55,34 +56,126 @@
             <div class="rounded-2xl border bg-yellow-500 mx-auto mt-2 lg:hidden md:hidden"></div>
         </nav>
         <!-- nav section end -->
-    </header>
 
-    <!-- header & banner -->
+        <!-- header section start -->
+        <div class="lg:flex items-center justify-between bg-[#EFEBE3] container max-w-full p-12 hidden">
+            <img src="./c2/assets/logo-header.png" alt="">
+            <ul class="flex items-center justify-between gap-8">
+                <li class="text-base text-[#111111] hover:text-green-600"><a href="#product">Product</a></li>
+                <li class="text-base text-[#111111] hover:text-green-600"><a href="#services">Services</a></li>
+                <li class="text-base text-[#111111] hover:text-green-600"><a href="#contactus">Contact us</a></li>
+            </ul>
 
-    <div class="flex items-center justify-between bg-[#EFEBE3] container max-w-full p-6">
-        <img src="./c2/assets/logo-header.png" alt="">
-        <ul class="flex items-center justify-between gap-8">
-            <li class="text-base text-[#111111] hover:text-green-600"><a href="#product">Product</a></li>
-            <li class="text-base text-[#111111] hover:text-green-600"><a href="#services">Services</a></li>
-            <li class="text-base text-[#111111] hover:text-green-600"><a href="#contactus">Contact us</a></li>
-        </ul>
+            <div class="flex items-center justify-center gap-4">
+                <!-- nav icon -->
+                <div class="lg:gap-4 flex items-center justify-between">
+                    <i class="fa-solid fa-magnifying-glass text-base h-6 w-6"></i>
+                    <i class="fa-solid fa-cart-flatbed text-base  h-6 w-7"></i>
+                </div>
 
-        <div class="flex items-center justify-center gap-4">
-            <!-- nav icon -->
-            <div class="lg:gap-4 flex items-center justify-between">
-                <i class="fa-solid fa-magnifying-glass text-base h-6 w-6"></i>
-                <i class="fa-solid fa-cart-flatbed text-base  h-6 w-7"></i>
-            </div>
-            <!-- nav button -->
-            <div class="gap-3 flex items-center justify-between">
-                <button class="px-7 py-2 border rounded-lg border-[#179800] hover:bg-slate-200">Login</button>
-                <button
-                    class="px-7 py-2 border rounded-lg bg-[#179800] text-xl text-[#FFFFFF]  hover:bg-green-700 cursor-pointer">Register</button>
+                <!-- nav button -->
+                <div class="gap-3 flex items-center justify-between">
+                    <button class="px-7 py-2 border rounded-lg border-[#179800] hover:bg-slate-200">Login</button>
+                    <button
+                        class="px-7 py-2 border rounded-lg bg-[#179800] text-xl text-[#FFFFFF]  hover:bg-green-700 cursor-pointer">Register</button>
+                </div>
             </div>
         </div>
-    </div>
+        <!-- header section end -->
 
-    <main></main>
+
+        <div class="p-4">
+            <h1
+                class="lg:text-center lg:font-semibold lg:text-[56px] text-[32px] text-[#111111] text-center font-semibold">
+                Freshness <span class="text-[#179800]">You
+                    Can</span><br>
+                <span class="text-[#179800]">Count</span> On, Prices You’ll Love!
+            </h1>
+
+            <p class=" lg:text-center text-[#111111] opacity-80 lg:text-xl text-center text-base font-light">Shop
+                your
+                daily
+                essentials at unbeatable prices.
+                From
+                fresh produce
+                to
+                pantry <br>
+                staples, we’ve got you
+                covered
+                every day!</p>
+        </div>
+
+        <div class="w-full h-screen">
+            <img class="w-full h-full object-contain opacity-100" src="./c2/assets/hero-vegetables.png" alt="">
+        </div>
+    </header>
+    <!-- header section end -->
+
+
+    <main class="container max-w-full mx-auto">
+
+        <!-- service section -->
+        <section class="lg:p-12 p-4">
+            <h3 class="font-semibold text-[#179800] text-2xl mb-4">Services</h3>
+
+            <div class="lg:grid lg:grid-cols-3 lg:gap-8 grid grid-cols-1 gap-5 md:grid md:grid-cols-2">
+                <!-- service card -->
+                <div class="card bg-[#EFEBE3] lg:w-[400px] lg:h-[350px] w-[350px] h-[300px]">
+                    <figure class="lg:px-12 lg:pt-12 px-8 py-8">
+                        <img src="./c2/assets/service.png" alt="Service"
+                            class="rounded-full bg-[#ffffff] p-2 lg:w-[100px] lg:h-[100px] w-20 h-20 hover:bg-green-200 cursor-pointer" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                        <h4 class="font-semibold text-xl lg:text-2xl text-[#111111] text-center">24/7 Services</h4>
+                        <p class="text-center text-base lg:text-xl">Health services in Bangladesh include
+                            hospitals,
+                            clinics,
+                            diagnostic
+                            centers, and mobile
+                            phone services.</p>
+                    </div>
+                </div>
+
+                <!-- delivery card -->
+                <div class="card bg-[#EFEBE3] lg:w-[400px] lg:h-[350px] w-[350px] h-[300px]">
+                    <figure class="lg:px-12 lg:pt-12 px-8 py-8 ">
+                        <img src="./c2/assets/delivery.png" alt="Service"
+                            class="rounded-full bg-[#ffffff] p-2 lg:w-[100px] lg:h-[100px] w-20 h-20 hover:bg-slate-400 cursor-pointer" />
+                    </figure>
+
+                    <div class="card-body items-center text-center">
+                        <h4 class="font-semibold text-xl lg:text-2xl text-[#111111] text-center">Fast Delivery</h4>
+                        <p class="text-center text-base lg:text-xl">Health services in Bangladesh include
+                            hospitals,
+                            clinics,
+                            diagnostic
+                            centers, and mobile
+                            phone services.</p>
+                    </div>
+                </div>
+
+                <!-- healthy card -->
+                <div class="card bg-[#EFEBE3] lg:w-[400px] lg:h-[350px] w-[350px] h-[300px]">
+                    <figure class="lg:px-12 lg:pt-12 px-8 py-8">
+                        <img src="./c2/assets/healthy.png" alt="Service"
+                            class="rounded-full bg-[#ffffff] p-2 lg:w-[100px] lg:h-[100px] w-20 h-20 hover:bg-green-800 cursor-pointer" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                        <h4 class="font-semibold text-xl lg:text-2xl text-[#111111] text-center">Healthy Products</h4>
+                        <p class="text-center text-base lg:text-xl">Health services in Bangladesh include
+                            hospitals,
+                            clinics,
+                            diagnostic
+                            centers, and mobile
+                            phone services.</p>
+                    </div>
+                </div>
+
+
+            </div>
+
+        </section>
+    </main>
 
     <footer></footer>
 
